@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size:1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: grey;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray ;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        tbody > tr:nth-child(2n) {
+            background-color: lightgrey;
+        } 
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+    <!-- ANATOMIA PARA TABELAS GRANDES
+     TABLE
+     CAPTION legenda da tabela
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH -->
+
+<table>
+    <caption>Popolazione delle regioni</caption>
+    <thead>
+        <tr>
+            <th scope="col">Provincia</th>
+            <th scope="col" style="width: 50px;">Popolazione</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Abruzzo</td>
+            <td class="num">1 272 627</td>
+        </tr>
+        <tr>
+            <td>Basilicata</td>
+            <td class="num">537 577</td>
+        </tr>
+        <tr>
+            <td>Calabria</td>
+            <td class="num">1 846 610</td>
+        </tr>
+        <tr>
+            <td>Campania</td>
+            <td class="num">5 828 882</td>
+        </tr>
+        <tr>
+            <td>Emilia-Romagna</td>
+            <td class="num">4 459 477</td>
+        </tr>
+        <tr>
+            <td>Friuli Venezia Giulia</td>
+            <td class="num">1 206 216</td>
+        </tr>
+        <tr>
+            <td>Lazio</td>
+            <td class="num">5 879 082</td>
+        </tr>
+        <tr>
+            <td>Liguria</td>
+            <td class="num">1 510 134</td>
+        </tr>
+        <tr>
+            <td>Lombardia</td>
+            <td class="num">10 103 969</td>
+        </tr>
+        <tr>
+            <td>Marche</td>
+            <td class="num">1 525 271</td>
+        </tr>
+        <tr>
+            <td>Molise</td>
+            <td class="num">300 516</td>
+        </tr>
+        <tr>
+            <td>Piemonte</td>
+            <td class="num">4 311 217</td>
+        </tr>
+        <tr>
+            <td>Puglia</td>
+            <td class="num">3 935 764</td>
+        </tr>
+        <tr>
+            <td>Sardegna</td>
+            <td class="num">1 639 591</td>
+        </tr>
+        <tr>
+            <td>Sicilia</td>
+            <td class="num">4 875 290</td>
+        </tr>
+        <tr>
+            <td>Trentino-Alto Adige</td>
+            <td class="num">1 078 655</td>
+        </tr>
+        <tr>
+            <td>Toscana</td>
+            <td class="num">3 673 457</td>
+        </tr>
+        <tr>
+            <td>Umbria</td>
+            <td class="num">870 165</td>
+        </tr>
+        <tr>
+            <td>Valle d'Aosta</td>
+            <td class="num">125 666</td>
+        </tr>
+        <tr>
+            <td>Veneto</td>
+            <td class="num">4 915 123</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <th scope="row">Popolazione totale</th>
+            <td class="num"><strong>59 895 289</strong></td>
+        </tr>
+    </tfoot>
+
+</table>
+</body>
+</html>
